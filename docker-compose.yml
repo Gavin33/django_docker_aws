@@ -11,7 +11,7 @@ services:
       - 8000
   nginx:
     build: ./nginx
-    image: django_docker_aws_web:django_docker_aws_nginx
+    image: django_docker_aws:django_docker_aws_nginx
     volumes:
       - static_volume:/usr/src/app/static
     ports:
